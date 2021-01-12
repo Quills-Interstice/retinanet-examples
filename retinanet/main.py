@@ -27,7 +27,7 @@ def parse(args):
     parser_train.add_argument('--images', metavar='path', type=str, help='path to images', default='.')
     parser_train.add_argument('--backbone', action='store', type=str, nargs='+', help='backbone model (or list of)', default=['ResNet50FPN'])
     parser_train.add_argument('--classes', metavar='num', type=int, help='number of classes', default=80)
-    parser_train.add_argument('--batch', metavar='size', type=int, help='batch size', default=2*devcount)
+    parser_train.add_argument('--batch', metavar='size', type=int, help='batch size', default=1*devcount)
     parser_train.add_argument('--resize', metavar='scale', type=int, help='resize to given size', default=1080)
     parser_train.add_argument('--max-size', metavar='max', type=int, help='maximum resizing size', default=2000)
     parser_train.add_argument('--jitter', metavar='min max', type=int, nargs=2, help='jitter size within range', default=[1000, 1200])
